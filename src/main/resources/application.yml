@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:33060/Vivero?allowPublicKeyRetrieval=true&useSSL=false&useTimezone=true&serverTimezone=GMT&characterEncoding=UTF-8"
+    username: ${username}
+    password: ${password}
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: "org.hibernate.dialect.MySQL5InnoDBDialect"
+  thymeleaf:
+    cache: false
+
+server:
+  port: 9090
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    path: "/doc/swagger-ui.html"
+    enabled: true
+#    paths de controladores a escanear
+  paths-to-match: "/calle/**"
