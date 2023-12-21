@@ -1,6 +1,6 @@
 package com.vivero.entity;
 
-import com.vivero.entity.dto.ClienteDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -16,6 +16,7 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_cliente", nullable = false)
+    @JsonIgnore
     private Integer id;
     @Column(name = "apellido", nullable = false)
     private String apellido;

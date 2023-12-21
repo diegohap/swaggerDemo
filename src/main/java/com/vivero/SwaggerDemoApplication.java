@@ -7,11 +7,9 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @PropertySource("file:/home/diegohap/.secrets/secretpr1.properties")
-//@DependsOn({"clienteRepository", "calleRepository"})
 public class SwaggerDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SwaggerDemoApplication.class, args);
 	}
-
 }
