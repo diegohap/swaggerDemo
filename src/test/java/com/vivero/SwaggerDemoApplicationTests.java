@@ -1,4 +1,4 @@
-package com.swaggerDemo;
+package com.vivero;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

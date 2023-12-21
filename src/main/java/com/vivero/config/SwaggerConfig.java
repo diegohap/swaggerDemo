@@ -1,4 +1,4 @@
-package com.swaggerDemo.config;
+package com.vivero.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -12,9 +12,9 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI(){
         return new OpenAPI()
                 .info(new Info()
-                        .title("swaggerDemo")
+                        .title("Vivero")
                         .version("0.1")
-                        .description("primer prueba de swagger")
+                        .description("Swagger de Vivero")
                         .license(new License().name("Apache 2.0").url("http://springdoc.org")));
     }
 }
